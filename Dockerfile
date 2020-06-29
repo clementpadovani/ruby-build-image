@@ -11,7 +11,8 @@ RUN apk update && \
                        g++ \
                        make \
                        zlib-dev \
-                       openssh
+                       openssh \
+                       bash
 
 # You cannot run CocoaPods as root
 RUN adduser -D cocoapods

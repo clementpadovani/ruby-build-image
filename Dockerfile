@@ -17,3 +17,6 @@ RUN apk update && \
 # You cannot run CocoaPods as root
 RUN adduser -D cocoapods
 USER cocoapods
+
+# Disable stat sending on our CI machines
+ENV COCOAPODS_DISABLE_STATS='TRUE'
